@@ -63,7 +63,7 @@ class GFG {
 
     }
 
-    public static boolean containsDupicates(StringBuilder word) {
+    public static boolean containsDuplicates(StringBuilder word) {
         for (int i = 1; i < word.length(); i++) {
             if (word.charAt(i) == word.charAt(i - 1))
                 return true;
@@ -77,7 +77,7 @@ class GFG {
         int testCases = Integer.parseInt(myReader.readLine());
         for (int i = 0; i < testCases; i++) {
             StringBuilder word = new StringBuilder(myReader.readLine());
-            while (containsDupicates(word))
+            while (containsDuplicates(word))
                 removeDuplicates(word);
             System.out.println(word.toString());
 
