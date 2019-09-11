@@ -32,7 +32,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 class GFG {
-    public static boolean isCorrect(char letter, char stackLetter) {
+    public static boolean isCorrectBracket(char letter, char stackLetter) {
         switch (letter) {
             case ')':
                 if (stackLetter == '(')
@@ -68,7 +68,7 @@ class GFG {
                         balanced = false;
                         break;
                     }
-                    if (!isCorrect(word.charAt(x), myStack.pop())) {
+                    if (!isCorrectBracket(word.charAt(x), myStack.pop())) {
                         balanced = false;
                         break;
                     }
